@@ -2,8 +2,8 @@
 
 **Paper:** *The Impact of Non-Native English on Emotion and Mental
 Health Condition Classification in Social Media Text*  
-**Venue/version:** EACL 2027 submission  
-**Last access check:** 17 November 2026
+**Venue/version:** EACL 2027 Main Conference
+
 
 This document lists the datasets and source corpora identified in the
 paper, with links to the original sources, access routes, and practical
