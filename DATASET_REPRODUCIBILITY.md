@@ -12,11 +12,6 @@ of the paper** unless explicitly marked otherwise. They describe the
 amounts reported as used in the experiments; they are not necessarily
 the current official corpus sizes.
 
-> **Important:** Do not upload third-party datasets to this repository
-> unless their terms explicitly allow redistribution. Several resources
-> below require registration, a licence agreement, or individual
-> permission. A public GitHub repository should contain download
-> instructions and scripts—not restricted source data.
 
 ## 1. At-a-glance access summary
 
@@ -339,28 +334,3 @@ checked against the final code or author-side data manifests:
 - Tajiri, T., Komachi, M., & Matsumoto, Y. (2012). Tense and Aspect
   Error Correction for ESL Learners Using Global Context. [ACL
   Anthology](https://aclanthology.org/P12-2040/)
-
-------------------------------------------------------------------------
-
-## 8. Suggested repository layout
-
-``` text
-repository/
-├── README.md
-├── DATASET_REPRODUCIBILITY.md   # this guide
-├── data/
-│   └── README.md                # explain where each licensed dataset is stored locally
-├── scripts/
-│   ├── prepare_l1_l2_corpora.py
-│   ├── prepare_rmhd.py
-│   ├── prepare_universal_joy.py
-│   └── verify_dataset_checksums.py
-└── configs/
-    └── dataset_manifest.yaml   # source versions, paths, checksums, split seeds
-```
-
-**Suggested policy:** keep `data/` out of Git (for example, add it to
-`.gitignore`). Ask each researcher to obtain restricted corpora directly
-from the provider, place them in the expected local directory, and run
-the preparation scripts. This makes the repository useful for
-reproduction without violating third-party dataset licences.
