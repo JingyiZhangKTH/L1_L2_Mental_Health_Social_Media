@@ -209,72 +209,9 @@ for the released code; use the final code/model release when available.
 6.  Follow the paper’s 70/15/15 stratified split and class-weighted
     training setup.
 
-### 5.4 What to record for a reproducible release
-
-For every downloaded source, record:
-
-- Original dataset name and URL
-- Dataset version/release date
-- Date downloaded
-- Licence or access agreement version
-- File name(s) and SHA-256 checksum(s)
-- Exact subset and fields used
-- Number of documents/posts before filtering
-- Number of items after filtering and segmentation
-- Random seed and split identifiers
-- Any transformations, deduplication, text cleaning, or exclusion rules
-
-Do not put restricted data, raw text, or prohibited derived outputs in
-this repository. Where redistribution is prohibited, provide the
-official access route and a script that runs after the user obtains
-their own licensed copy.
-
 ------------------------------------------------------------------------
 
-## 6. Items to clarify before claiming exact reproduction
-
-The following points are visible in the submitted paper and should be
-checked against the final code or author-side data manifests:
-
-1.  **Mental-health count discrepancy:** Section 4.1 states that the
-    final mental-health corpus contains **147,994 chunks**, but Table
-    2’s category counts sum to **110,616** (83,122 L1 + 27,494 L2). The
-    final release should explain which number is correct and whether the
-    difference reflects an additional filtering or counting stage.
-2.  **BNC2014 access:** The paper cites the Written BNC2014. The
-    official CASS page says the written corpus can be searched via
-    \#LancsBox X but that the full written texts cannot currently be
-    released. Explain how the 668K-word subset was obtained and which
-    files or query/export were used.
-3.  **LOCNESS size:** The paper reports 281K words; the current LOCNESS
-    access page reports 324,304 words. Identify the exact release and
-    any exclusions/preprocessing.
-4.  **NUCLE size:** The NUS description reports over one million words;
-    the paper reports 301K. Identify the exact subset and filtering.
-5.  **AMALGUM size/version:** The AMALGUM paper describes about 4M
-    tokens, while this paper reports 3M words. The public GitHub release
-    excludes Reddit texts, while the complete Reddit-containing version
-    is available by request. Identify the precise snapshot used.
-6.  **COREFL evaluation:** The paper says the COREFL L2 portion is held
-    out for a separate proficiency-based evaluation, even though Table 1
-    lists only the COREFL L1 training portion. Include the COREFL L2
-    evaluation procedure and version in the final reproduction
-    materials.
-7.  **L2-Reddit availability:** The original paper’s project download
-    URL did not respond during this check. Confirm a working official
-    download route or document author contact and the exact archive
-    version.
-8.  **CAWSE version:** The current Leeds repository is restricted access
-    and may differ in metadata from the earlier 2019 release. Record the
-    precise release obtained.
-9.  **W&I redistribution:** Cambridge’s terms prohibit redistribution of
-    the corpus and require prior approval for derived items. Do not
-    upload the data, partial samples, models, or statistics derived from
-    it unless CUP&A has approved that specific release.
-
-------------------------------------------------------------------------
-
-## 7. References and source links
+## 6. References and source links
 
 - Brezina, V., Hawtin, A., & McEnery, T. (2021). The Written British
   National Corpus 2014: Design and Comparability. *Text & Talk*,
